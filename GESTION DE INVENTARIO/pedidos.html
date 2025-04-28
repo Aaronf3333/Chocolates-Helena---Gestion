@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="CSS/pedidos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 6px 12px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pedidos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Total (S/.)</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>Chocolate Bitter</td>
+                <td>3</td>
+                <td>45.00</td>
+                <td>25/04/2025</td>
+                <td>Pendiente</td>
+                <td>
+                    <button class="button">Actualizar</button>
+                    <button class="button" style="background-color: #f44336;">Eliminar</button>
+                </td>
+            </tr>
+            <!-- Puedes copiar y pegar más filas aquí -->
+        </tbody>
+    </table>
+
+</body>
+<br>
+<a href="index.html" class="btn-regresar">Regresar al Inicio</a>
+
+</html>

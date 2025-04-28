@@ -1,0 +1,47 @@
+.fondo-carrusel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slides {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    animation: slide 30s infinite;
+    z-index: 1;
+  }
+  
+  .slides img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100vw); }
+    66% { transform: translateX(-200vw); }
+    100% { transform: translateX(0); }
+  }
+  
+  .texto-bienvenida {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .slides img {
+    width: 100vw; 
+    height: 90vh; 
+    object-fit: cover; 
+  }
+  
